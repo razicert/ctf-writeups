@@ -35,6 +35,11 @@ enc.png :
 ![enc.png](https://github.com/razicert/ctf-writeups/blob/master/2020/%C3%A5ngstromCTF%202020/Wacko%20Images/enc.png)
 
 **Solution:** <br/>
-Search for "_" in file.
+From the script we gather that for correct 'j' the ``` e = (j * 251 + pixel[i]) / key[i] ``` gives us the original value before encryption, so we loop through 'j' in range(0, max(key)) and for each 'e' we check if it's a floating point number or not, if not, it's possibly the right one. We add a few lines to the encryption script and hope we get an image that is close enough to original image.
 
-Flag: rtcp{w0Rd5_HuRt_,_d0n'T_Bu11y_,_k1Dz}
+flag.png :
+
+![flag.png](https://github.com/razicert/ctf-writeups/blob/master/2020/%C3%A5ngstromCTF%202020/Wacko%20Images/flag.png)
+
+Close enough.
+Flag: actf{m0dd1ng_sk1llz}
