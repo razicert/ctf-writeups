@@ -8,6 +8,7 @@
 > The flag is actf{x#xx#xx_xx#xxx} where x represents any lowercase letter and # represents any one digit number.
 
 We get an encrypted image and encryption script:
+
 image-encryption.py :
 ```python
 from numpy import *
