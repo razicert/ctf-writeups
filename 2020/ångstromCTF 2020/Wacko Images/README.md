@@ -31,7 +31,7 @@ enc = Image.fromarray(img)
 enc.save('enc.png')
 ```
 enc.png :
-[enc.png]
+![enc.png](https://github.com/razicert/ctf-writeups/blob/master/2020/%C3%A5ngstromCTF%202020/Wacko%20Images/enc.png)
 
 **Solution:** <br/>
 Search for "_" in file.
