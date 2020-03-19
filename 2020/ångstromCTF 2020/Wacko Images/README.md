@@ -1,15 +1,13 @@
 # ångstromCTF 2020 <br/>
 **category: Crypto** <br/>
-**Challenge Name:** <br/>
-Wacko Images
-
-**Points:** <br/>
-90
+**Challenge Name: Wacko Images** <br/>
+**Points: 90** <br/>
 
 **Description:** <br/>
 > How to make hiding stuff a e s t h e t i c? And can you make it normal again? enc.png image-encryption.py
 > The flag is actf{x#xx#xx_xx#xxx} where x represents any lowercase letter and # represents any one digit number.
 
+We get an encrypted image and encryption script:
 image-encryption.py :
 ```python
 from numpy import *
@@ -32,7 +30,8 @@ for x in range (0, a):
 enc = Image.fromarray(img)
 enc.save('enc.png')
 ```
-
+enc.png :
+[enc.png]
 
 **Solution:** <br/>
 Search for "_" in file.
